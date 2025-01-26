@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML course</title>
+    <link rel="stylesheet" href="styles.css">
     <meta name="keywords" content="html, css">
     <meta name="description" content="Базовый курс html, css"
 </head>
+
+
 <body>
-    <img src="1.jpg" width="200">
-    <h2> Олеся Пруткевич</h2>
+<div class="container">
+
+    <div class="info">
+    <img src="1.jpg" class="avatar">
+
+    <div class="info-text">
+    <h3> Олеся Пруткевич</h3>
     <p>Я <strong>будущий фронтэнд разработчик</strong>, 
     <br>Изучаю программирование, 
     <br>Обожаю читать, 
     <br><strong><em>Путеществовать, 
     узнавать  новое и видеть вокруг прекрасное,</em></strong> 
     <br>Люблю свого сына, спорт, море и вкусно покушать :)</p>
-
+    
  <p><strong>Список социальных сетей:</strong></p>
  <p> <a href="https://www.instagram.com/olesia_bakhareva/" target="_blank">Instagram</a>  | 
     <a href="https://www.facebook.com/olesya.bahareva" target="_blank">Facebook</a> 
 </p>
+</div>
+</div>
 
-<h2>Мои хобби</h2>
-<ol>
+
+<div class="card bg-yellow">
+<h4>Мои хобби</h4>
+<ol class="list">
     <li>Спорт</li>
     <li>Чтение</li>
     <li>Программирование</li>
     <li>Путешествия</li>
     <li>Иностранные языки</li>
 </ol>
+</div>
 
-<h3>Опыт работы</h3>
+<div class="card bg-red">
+<h4>Опыт работы</h4>
 
-<table>
+<table class="table">
     <thead>
         <tr>
     <th>Название</th>
@@ -55,35 +69,50 @@
 </tbody>
 
 </table>
+</div>
+
+<tr>
+<div class="card bg-green">
+    <h4>Мои курсы</h4>
+    <ol class="list 1">
+        <li>Профессия Junior Frontend-разработчик</li>
+    </ol>
+    </div>
+</tr>
+    
 
 
-<h3>Связаться со мной</h3>
 
-<form>
+<form class="form"> 
+    <h4>Связаться со мной</h4>
 
-<div>
+    <div class="form-row">
+
+<div class="form-group">
     <label for="Имя"> Ваше имя: </label>
     <input type="имя" id="имя" placeholder="Введите имя">
 </div>
-<br>
 
-    <div>
+<div class="form-group">
         <label for="Email"> Ваше email:</label>
         <input type="email" id="email" placeholder="Введите email">
     </div>
     <br>
+</div>
 
-    <div>
+    <div class="form-group">
         <label for="text"> Ваше сообщение:</label>
         <br>
         <textarea id="text" placeholder="Введите сообщение..." cols="30" rows="10"></textarea>
     </div>
     <br>
 
-    <button type="submit"> Отправить </button>
+    <button class="btn" type="submit"> Отправить </button>
 
     
 </form>
+</div>
+
 
 </body>
 </html>
